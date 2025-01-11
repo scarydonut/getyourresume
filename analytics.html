@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Resume Analytics Dashboard</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <nav class = "navbar bg-white">
+            <div class="container">
+                <div class = "navbar-content">
+                    <div class = "brand-and-toggler">
+                        <a href = "index.html" class = "navbar-brand">
+                            <img src = "images/icon.jpg" alt = "" class = "navbar-brand-icon">
+                            <span class = "navbar-brand-text">GetYour<span> Resume!!</span></span>
+                        </a>
+                        <button type = "button" class = "navbar-toggler-btn">
+                            <div class = "bars">
+                                <div class = "bar"></div>
+                                <div class = "bar"></div>
+                                <div class = "bar"></div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section id="analytics-dashboard" class="container">
+            <h1 class="text-center">Resume Analytics Dashboard</h1>
+            <div class="analytics-metrics">
+                <div class="metric">
+                    <h3>Total Edits</h3>
+                    <p id="total-edits">0</p>
+                </div>
+                <div class="metric">
+                    <h3>Most Used Input Fields</h3>
+                    <p id="most-used-input-fields">N/A</p>
+                </div>
+                <div class="metric">
+                    <h3>Total Time Spent (seconds)</h3>
+                    <p id="total-time-spent">0</p>
+                </div>
+            </div>
+            <button type="button" class="btn btn-secondary" onclick="window.location.href='resumepage.html'">Back to Resume Page</button>
+            <button type="button" class="btn btn-primary" id="download-report-btn">Download Analytics Report</button>
+        </section>
+
+        <script src="analytics.js"></script>
+    </body>
+</html>
